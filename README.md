@@ -4,7 +4,7 @@
 ## 说明
 
 自动获取账号内所有的VPS项目，并检测是否需要续期，需要续期会自动续期。
-
+Cancel Changes
 ## 使用说明
 
 ~~1、Star本项目~~
@@ -28,7 +28,7 @@ PASSWORD: 第一个账户密码,第二个账户密码
 
 1、若使用Github Actions运行本脚本，将会公开你的账号中VPS个数以及VPS的ID（**Contract**）
 
-2、由于Github Workflow的限制，你可能需要每两个月重新启动一下，方法是随便改下本README.md
+2、~~由于Github Workflow的限制，你可能需要每两个月重新启动一下，方法是随便改下本README.md~~已添加不定期自动提交的GitHub action，正常情况可以永续自动续期
 
 ## 参考（及本文档）
 
