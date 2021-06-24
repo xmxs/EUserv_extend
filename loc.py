@@ -244,7 +244,7 @@ class HostlocGetPoints():
 
 if __name__ == '__main__':
     usernames = os.environ['LOC_UN']
-    passwords = os.environ['LOC_UD']
+    passwords = os.environ['LOC_PW']
     bot_api = os.environ['BOT_API']
     chat_id = os.environ['CHAT_ID']
 
