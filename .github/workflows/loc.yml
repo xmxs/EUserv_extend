@@ -21,8 +21,8 @@ jobs:
       run: python -m pip install --upgrade requests pyaes
     - name: 'Get points'
       env:
-        HOSTLOC_USERNAME: ${{ secrets.HOSTLOC_USERNAME }}
-        HOSTLOC_PASSWORD: ${{ secrets.HOSTLOC_PASSWORD }}
+        HOSTLOC_USERNAME: ${{ secrets.LOC_UN }}
+        HOSTLOC_PASSWORD: ${{ secrets.LOC_PW }}
         BOT_API: ${{ secrets.BOT_API }}
         CHAT_ID: ${{ secrets.CHAT_ID }}
       run: python loc.py
