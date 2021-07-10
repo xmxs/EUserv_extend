@@ -27,6 +27,7 @@ def login(username, password) -> (str, requests.session):
     }
     url = "https://support.euserv.com/index.iphp"
     session = requests.Session()
+    fpre = session.get("https://support.euserv.com/css/kc2_item_promotion/main.css", headers=headers)
     f = session.post(url, headers=headers, data=login_data)
     f.raise_for_status()
     if f.text.find('Hello') == -1:
