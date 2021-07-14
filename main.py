@@ -128,8 +128,8 @@ if __name__ == "__main__":
         print("你没有添加任何账户")
         TOKEN and notify_user(token=TOKEN, msg="你没有添加任何账户")
         exit(1)
-    user_list = USERNAME.strip().split()
-    passwd_list = PASSWORD.strip().split()
+    user_list = USERNAME.split(',')
+    passwd_list = PASSWORD.split(',')
     if len(user_list) != len(passwd_list):
         print("The number of usernames and passwords do not match!")
         TOKEN and notify_user(token=TOKEN, msg="The number of usernames and passwords do not match!")
